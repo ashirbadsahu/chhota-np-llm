@@ -103,12 +103,12 @@ def main():
         elapsed = time.time() - start_time
         print(f"Epoch {epoch + 1}/{num_epochs} completed | Avg Loss: {avg_loss:.4f} | Time: {elapsed:.1f}s")
 
-        model.save_weights(f"chhota_np_llm_e{epoch + 1}.npz")
-        print(f"  Weights saved: chhota_np_llm_e{epoch + 1}.npz")
+        model.save_weights(f"chhota_np_llm_weights_e{epoch + 1}.npz")
+        print(f"  Weights saved: chhota_np_llm_weights_e{epoch + 1}.npz")
 
     print(f"\nTraining finished in {time.time() - start_time:.1f}s!")
 
-    model.load_weights(f"chhota_np_llm_e{num_epochs}.npz")
+    model.load_weights(f"chhota_np_llm_weights_e{num_epochs}.npz")
     with open("tokenizer.pkl", "wb") as f:
         pickle.dump(tokenizer, f)
     print("Tokenizer saved: tokenizer.pkl")

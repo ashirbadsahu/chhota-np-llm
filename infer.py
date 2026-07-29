@@ -26,9 +26,9 @@ def main():
     print(f"Initializing model with vocab_size={vocab_size}, embed_dim={embed_dim}, num_layers={num_layers}, num_heads={num_heads}")
     model = GPTDecoder(vocab_size, embed_dim, num_layers, num_heads, max_seq_len=max_seq_len)
 
-    weight_file = "maujmasti_weights_e10.npz"
+    weight_file = "chhota_np_llm_weights_e10.npz"
     if not os.path.exists(weight_file):
-        files = glob.glob("maujmasti_weights_e*.npz")
+        files = glob.glob("chhota_np_llm_weights_e*.npz")
         if files:
             weight_file = sorted(files)[-1]
         else:
