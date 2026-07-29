@@ -77,7 +77,7 @@ pip install cupy-cuda12x
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### 1. Model Training
 To train the tokenizer on `tiny-shakespeare.txt`, initialize model weights, and run the training loop:
@@ -107,7 +107,7 @@ python eval.py
 
 ---
 
-## 📚 Documentation & Technical Notes
+## Documentation & Technical Notes
 
 For deep-dive mathematical explanations and architectural diagrams of the forward and backward passes:
 - Compile `notes.typ` into PDF format using [Typst](https://typst.app/):
